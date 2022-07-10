@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for x in *.txt
+do
+  for y in *.txt
+  do
+    echo "$x $y - Common:"
+    grep -f $x $y
+  done
+  echo
+done
+
+
