@@ -1,0 +1,1 @@
+grep -wf  PDSS1_posneg_genenames.ensembl COQ2_posneg_gnenames.ensembl > PDSS1_COQ2_common

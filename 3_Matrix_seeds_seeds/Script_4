@@ -1,0 +1,5 @@
+# When created in windows, the .tsv format is not recognized by the Uni’x Shell and this need to be forced: 
+
+dos2unix *
+perl createMatrixForCommons.pl common_targets.tsv > posneg_seeds_matrix.txt
+
