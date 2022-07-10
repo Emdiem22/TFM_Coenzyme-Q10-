@@ -1,3 +1,0 @@
-perl getAnnotationFromGenes.pl > results_annotation     
-
-tail -n +2 results_annotation | cut -f3 | sort | uniq > posneg_genenames.ensembl    
