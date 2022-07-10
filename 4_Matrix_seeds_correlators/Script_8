@@ -1,0 +1,6 @@
+cut -f2 common_targets.tsv | sort | uniq -c | sort -n | grep -E "^      [3-5]" | cut -c9- > correlators_3.gn
+grep -wf correlators_3.gn common_targets.tsv > common_targets_3.tsv
+perl createMatrixForCorrelators.pl common_targets_3.tsv > posneg_correlators_matrix.txt
+
+
+
