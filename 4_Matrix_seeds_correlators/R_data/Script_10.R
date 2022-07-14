@@ -50,7 +50,7 @@ legend("bottomleft", title="Type of correlator", c("Positive","Negative","Both")
        fill= c("tomato3","ivory","moccasin"), cex=1)
 dev.off()
 
-################## GeneNetwork of seeds and correlators ########################
+################## Dendrogram ########################
 
 # Transpose matrix
 m3 <- t(m2)
