@@ -1,5 +1,5 @@
-cut -f1-3 *.text | grep -wf correlators.txt | grep -P "positive" | cut -f3 | sort | uniq  > correlators_posprev
-cut -f1-3 *.text | grep -wf correlators.txt | grep -P "negative" | cut -f3 | sort | uniq  > correlators_negprev
+cut -f1-3 *.text | grep -wf correlators_3.gn | grep -P "positive" | cut -f3 | sort | uniq  > correlators_posprev
+cut -f1-3 *.text | grep -wf correlators_3.gn | grep -P "negative" | cut -f3 | sort | uniq  > correlators_negprev
 grep -wf correlators_posprev correlators_negprev > correlators_posneg
 grep -vwf correlators_posneg correlators_posprev > correlators_pos
 grep -vwf correlators_posneg correlators_negprev > correlators_neg
